@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vnipe.Controller">
+   <GridPane alignment="TOP_CENTER" maxWidth="1.7976931348623157E308">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="250.0" prefWidth="250.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="250.0" prefWidth="250.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="40.0" prefHeight="200.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+           <Label focusTraversable="false" text="Выберите дату начала выборки" textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+           <Label focusTraversable="false" text="Выберите дату окончания выборки" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <DatePicker fx:id="beginDate" prefHeight="25.0" prefWidth="240.0" GridPane.rowIndex="1" />
+         <DatePicker fx:id="endDate" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <ListView fx:id="paeses" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2" />
+         <!-- <CheckBox fx:id="paes1" mnemonicParsing="false" text="paes1" GridPane.rowIndex="2" />
+         <CheckBox fx:id="paes2" mnemonicParsing="false" text="paes2" GridPane.rowIndex="3" />
+         <CheckBox fx:id="paes3" mnemonicParsing="false" text="paes3" GridPane.rowIndex="4" />
+         <CheckBox fx:id="paes4" mnemonicParsing="false" text="paes4" GridPane.rowIndex="5" />-->
+
+          <GridPane alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+              <children>
+                  <ComboBox fx:id="nameDataFrom" GridPane.rowIndex="1" onAction="#dataAction"/>
+                  <TextField fx:id="nameDataTo" GridPane.rowIndex="3" />
+                  <Label text="Название БД, из которой копируем" GridPane.rowIndex="0" />
+                  <Label text="Название БД, в которую копируем" GridPane.rowIndex="2" />
+              </children>
+          </GridPane>
+      </children>
+   </GridPane>
+   <Button alignment="CENTER" mnemonicParsing="false" onAction="#clickCopyButton" text="Копировать" textAlignment="CENTER">
+      <opaqueInsets>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </opaqueInsets>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+      <VBox.margin>
+         <Insets top="20.0" />
+      </VBox.margin></Button>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,50 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="CP-PAES">
+    <output-path>$PROJECT_DIR$/out/artifacts/CP_PAES</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" />
+        <option name="appClass" value="ru.vnipe.Main" />
+        <option name="convertCss2Bin" value="false" />
+        <option name="customManifestAttributes">
+          <list />
+        </option>
+        <option name="description" value="" />
+        <option name="enabledSigning" value="false" />
+        <option name="height" value="400" />
+        <option name="htmlParamFile" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="htmlTemplateFile" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" />
+            <option name="macIcon" />
+            <option name="windowsIcon" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="keypass" />
+        <option name="keystore" />
+        <option name="msgOutputLevel" value="Default" />
+        <option name="nativeBundle" value="all" />
+        <option name="paramFile" />
+        <option name="selfSigning" value="true" />
+        <option name="storepass" />
+        <option name="title" value="CP_PAES" />
+        <option name="updateMode" value="background" />
+        <option name="vendor" value="" />
+        <option name="version" value="2" />
+        <option name="width" value="500" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="CP_PAES.jar">
+        <element id="module-output" name="CP-PAES" />
+        <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.25" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.0" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.0" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.0" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.0" />
+      </element>
+    </root>
+  </artifact>
+</component>

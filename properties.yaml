@@ -1,0 +1,7 @@
+---
+paesQNT: 4
+dbName: "storage"
+server: "localhost"
+port: 3306
+user: "root"
+password: "1111"
